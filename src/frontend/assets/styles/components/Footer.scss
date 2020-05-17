@@ -1,0 +1,21 @@
+@import '../Variables.scss';
+.Footer {
+    width: 100%;
+   // display: grid;
+   //grid-template-columns: repeat(3, 33.33%);
+    height: 200px;
+
+    background-color: $COLOR_NEGRO;
+    position: relative;
+    z-index: 99;
+  
+  }
+  .pruebaa{
+    position: relative;
+  }
+  .particless{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }

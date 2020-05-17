@@ -1,0 +1,19 @@
+@import '../Variables.scss';
+.Chart_cart{
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    background-color: $COLOR_TRANSPARENT;//variable
+    margin: 1em 0;
+    border-radius: 0.2em;
+    box-shadow: $BOX_SHADOW; //varriable
+    font-size: 20px;
+    margin-left: 20px;
+    color: $COLOR_NEGRO;
+
+}
+.Chart_p{
+    font-size: 12px;
+    margin-top: 10px;
+
+}
