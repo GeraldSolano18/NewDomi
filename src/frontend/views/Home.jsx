@@ -1,5 +1,8 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import Particles from "react-particles-js";
 import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 import Slides from '../components/Slides';
 import CartHome from '../components/CartHome';
@@ -28,6 +31,40 @@ const images = [
   }
 // eslint-disable-next-line comma-dangle
 ];
+const particleOPT = {
+  particles: {
+    number: {
+      value: 80,
+      density: {
+        enable: true,
+        value_area: 600,
+      },
+    },
+    color: {
+      value: "#000000",
+    },
+    size: {
+      value: 1.5,
+      random: false,
+      anim: {
+        speed: 30,
+        size_min: 0.1,
+        sync: false,
+      },
+      opacity: {
+        value: 1000,
+        random: false,
+      },
+    },
+    line_linked: {
+      enable: true,
+      random: false,
+      distance: 100,
+      color: "#000000",
+      opacity: 0.9,
+    },
+  },
+};
 
 const Home = () => {
   return (
@@ -73,9 +110,57 @@ const Home = () => {
         </div>
 
       </div>
-      <div className='hero__image'>
-        <span />
+      <div className='two_ph'>
+        <Fade left>
+          <div className='two_1'>
+            <p className='two_title'>Impacto Social</p>
+            <p className='two_content'>
+          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico de tipografías Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
+          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
+          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
+            </p>
+            <button type='button' className='two_button'> VER MÁS</button>
+          </div>
+        </Fade>
+        <Fade right>
+          <div className='two_2'>
+            <p className='two_title'>Impacto económico</p>
+            <p className='two_content'>
+          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
+          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
+          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
+            </p>
+            <button type='button' className='two_button'> VER MÁS</button>
+          </div>
+        </Fade>
+
       </div>
+
+      <Fade>
+        <div className='hero_banner'>
+          <div className='hero_banner_content'>
+            <div className='particles_banner'>
+              <Particles height='500px' width='751px' params={particleOPT} />
+            </div>
+            <div className='hero_banner_center'>
+              <h1 className='hero_banner_h1'>Lorem Title App </h1>
+              <p className='hero_banner_p'>
+          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico de tipografías Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
+          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
+          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
+              </p>
+              <p className='hero_banner_p'>
+        es de tipografías
+          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
+              </p>
+            </div>
+          </div>
+          <div className='hero_banner_img' />
+        </div>
+      </Fade>
+
+      <div className='hero__image' />
+
     </div>
   );
 

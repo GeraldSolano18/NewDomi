@@ -34,7 +34,7 @@ DomiTiendas permite a los comercios Nicaraguense maximimar beneficios y evitar c
                   contenido='Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final. Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final. '
                 />
                 <Acordeon
-                  titulo='Haz que todos conozcan tu producto'
+                  titulo='Haz que todos conozcan tu producto!'
                   contenido='Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final'
 
                 />

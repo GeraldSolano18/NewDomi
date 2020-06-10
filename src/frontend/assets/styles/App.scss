@@ -13,28 +13,127 @@ li {
   list-style: none;
 }
 
-.Landing_con {
-  //    
-  background-color: #fff;
-  height: 1fr;
-  @include responsive(small){
-    width: 550px;
-  }
-  @include responsive(medium){
-    width: 700px;
-  }
-  @include responsive(large){
-    width: 1250px;
- }
+// .Landing_con {
+//   //    
+//   background-color: #fff;
+//   height: 1fr;
+//   @include responsive(small){
+//     width: 550px;
+//   }
+//   @include responsive(medium){
+//     width: 700px;
+//   }
+//   @include responsive(large){
+//     width: 1250px;
+//  }
 
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  bottom: 50px;
-  z-index: 100;
-  border-radius: 10px;
-  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.17);
+//   margin-left: auto;
+//   margin-right: auto;
+//   position: relative;
+//   bottom: 50px;
+//   z-index: 100;
+//   border-radius: 10px;
+//   box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.17);
+// }
+
+.two_ph{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+ margin-bottom: 25px;
 }
+
+@mixin foto{
+  height: 520px;
+  display: block;
+  width: 520px;
+}
+.two_1{
+  @include foto;
+  background: url('../static/Social.png')  center no-repeat;
+  background-size: 520px, cover;
+  border-radius: 15px;
+  margin-left: auto;
+}
+.two_2{
+  @include foto;
+  background: url('../static/gente-negocios.png')  center no-repeat;
+  background-size: 520px, cover;
+  border-radius: 6px;
+  margin-right: auto;
+}
+.two_title{
+  font-size: 35px;
+  color: $COLOR_NEGRO;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+}
+.two_content{
+  padding: 35px;
+  line-height: 1.5em;
+  color: $COLOR_NEGRO;
+  font-size: 17px;
+  margin-top: 40px;
+  text-align: justify;
+  background: rgba(255, 255, 255, 0.3);
+}
+.two_button{
+  cursor: pointer;
+  outline: none;
+  background: none;
+  padding: 8px;
+  border: solid 3px $COLOR_NEGRO;
+  border-radius: 5px;
+  width: 140px;
+  font-size: 18px;
+  font-weight: bold;
+  color:$COLOR_PRINCIPAL;
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+}
+
+
+.hero_banner_img{
+  background: url('../static/empresaria.png')  center no-repeat;
+  background-size: 600px, cover;
+}
+.hero_banner{
+  display: grid;
+  grid-template-columns: 1fr 600px;
+  height: 500px;
+}
+.hero_banner_content{
+  background: #f0f3fa;
+  z-index: -2;
+}
+.hero_banner_p{
+  margin-top: 20px;
+  color:$COLOR_NEGRO;
+  z-index: 100;
+  padding: 0 30px;
+text-align: justify;
+font-size: 18px;
+line-height: 1.7em;
+}
+.hero_banner_h1{
+  text-align: center;
+  color:$COLOR_NEGRO;
+  font-weight: bold;
+  font-size: 30px;
+}
+.hero_banner_center{
+ position: relative;
+ top: 50px;
+}
+.particles_banner{
+  width: 100%;
+  height: 500px;
+  z-index: -1;
+  position: absolute;
+}
+
 
 .Landing_Cart {
   display: grid;
