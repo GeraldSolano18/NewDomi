@@ -19,6 +19,7 @@
     "@babel/plugin-transform-runtime": "^7.7.6",
     "@babel/register": "^7.7.7",
     "@babel/runtime": "^7.7.7",
+    "antd": "^4.2.5",
     "apexcharts": "^3.15.2",
     "autoprefixer": "^9.7.3",
     "babel-plugin-transform-class-properties": "^6.24.1",

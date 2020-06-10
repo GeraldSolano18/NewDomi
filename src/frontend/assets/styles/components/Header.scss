@@ -1,4 +1,5 @@
 @import '../Variables.scss';
+@import '../Mixins.scss';
 
 .Header{
     background-color: $COLOR_PRINCIPAL;
@@ -34,6 +35,15 @@
     background-color:rgba(255, 255, 255, 0.3);
     padding: 5px;
     border-radius: 5px;
+    @include responsive(small){
+        display: none;
+      }
+      @include responsive(medium){
+        display: none;;
+      }
+      @include responsive(large){
+        display: inline-flex;
+      }
 }
 .Link{
     list-style: none;

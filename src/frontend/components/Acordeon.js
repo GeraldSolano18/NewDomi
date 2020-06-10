@@ -5,14 +5,14 @@ import arrow from '../assets/static/rigth.svg';
 
 import '../assets/styles/components/Acordeon.scss';
 
-const Acordeon = ({ titulo, contenido, bgColor }) => {
+const Acordeon = ({ titulo, contenido }) => {
   const [isExpanded, setExpanded] = useState(false);
   const contentRef = useRef();
 
   const toggle = () => setExpanded(!isExpanded);
 
   const animation = {
-    background: bgColor,
+    backgroundImage: 'linear-gradient(to right, #004E69 0% , hsl(192, 70%, 51%) 100%)',
     padding: '0.5em 1em',
     borderRadius: '6px',
     width: '600px',
@@ -27,12 +27,18 @@ const Acordeon = ({ titulo, contenido, bgColor }) => {
 
   };
   const aniContenido = {
-    height: isExpanded ? contentRef.current.scrollHeight : '0px',
+    height: isExpanded ? '100%' : '0px',
     overflow: 'hidden',
     width: '550px',
     transition: 'all 350ms easy-out',
-    padding: isExpanded ? '1' : '0 0.5em',
+    padding: isExpanded ? '20px' : '0 0.5em',
     margin: '0px',
+    backgroundColor: '#f0f3fa',
+    borderRadius: '5px',
+    display: 'block',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+
   };
   const imgStyles = {
     width: '25px',
@@ -40,12 +46,12 @@ const Acordeon = ({ titulo, contenido, bgColor }) => {
     transform: isExpanded ? 'rotate(90deg)' : 'rotate(0)',
   };
   const martop = {
-    marginTop: '10px',
+    marginTop: '15px',
   };
   return (
     <div style={martop}>
       <div style={animation} onClick={toggle}>
-        <span>
+        <span className='titleAcordeon'>
           {titulo}
         </span>
         <img src={arrow} alt='arrow' style={imgStyles} />
@@ -61,13 +67,11 @@ const Acordeon = ({ titulo, contenido, bgColor }) => {
 Acordeon.defaultProps = {
   titulo: '',
   contenido: '',
-  bgColor: '#523da5',
 };
 
 Acordeon.propTypes = {
   titulo: propTypes.string,
   contenido: propTypes.string,
-  bgColor: propTypes.string,
 };
 
 export default Acordeon;

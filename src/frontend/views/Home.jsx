@@ -13,17 +13,17 @@ const images = [
   {
     id: '1x',
     src: 'https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    titulo: 'el disenio es aerte',
+    titulo: 'Titulo 1 sub',
   },
   {
     id: '2xx',
     src: 'https://images.pexels.com/photos/1005638/pexels-photo-1005638.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    titulo: 'Al fin nos encontramos un buen curso estoy emocionado por seeguir viendo cuanto puedo aprender',
+    titulo: 'Titulo 2 subtit',
   },
   {
     id: '3xxx',
     src: 'https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    titulo: 'Deberia estudiar mas horas al diaaa',
+    titulo: 'Titulo 3 subtitulos',
   // eslint-disable-next-line comma-dangle
   }
 // eslint-disable-next-line comma-dangle
@@ -33,7 +33,7 @@ const Home = () => {
   return (
     <div>
       <Slides
-        interval={2000}
+        interval={4000}
         images={images}
       />
 
@@ -45,29 +45,36 @@ const Home = () => {
               <CartHome
                 titulo='Mision'
                 icon={Mision}
-                contenido=''
+                contenido='Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías '
               />
             </Zoom>
           </div>
           <div>
-            <CartHome
-              titulo='Vision'
-              icon={Vision}
-              contenido='lormmmmmm'
-            />
+            <Zoom>
+              <CartHome
+                titulo='Vision'
+                icon={Vision}
+                contenido='Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías '
+              />
+            </Zoom>
+
           </div>
           <div>
+            <Zoom>
+              <CartHome
+                titulo='Valores'
+                icon={Valores}
+                contenido='Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías '
+              />
+            </Zoom>
 
-            <CartHome
-              titulo='Valores'
-              icon={Valores}
-              contenido='lorem loreeeeeeemmmm'
-            />
           </div>
 
         </div>
 
-        hola
+      </div>
+      <div className='hero__image'>
+        <span />
       </div>
     </div>
   );

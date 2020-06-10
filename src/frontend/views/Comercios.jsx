@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import fondo from '../assets/static/fondo-blanco.png';
 import logo from '../assets/static/logo.svg';
+import pos from '../assets/static/pos.png';
 import banner from '../assets/static/bannerComercio.png';
 import check from '../assets/static/Check.svg';
 import '../assets/styles/views/Comercios.scss';
@@ -29,32 +30,41 @@ Red store permite a los comercios Nicaraguense maximimar beneficios y evitar com
 
         </div>
         <div className='contenido_'>
-          <ul>
-            <img src={check} className='check' alt='check' />
-            <li className='liCheck'>
-              Ahórrate dolores de cabeza y dinero con un sistema
-              de control de inventarios confiable,
-              practico y facil de usar acorde a tus necesidades.
-            </li>
-            <img src={check} className='check' alt='check' />
-            <li className='liCheck'>
-              mejora tus ventas con nosotros
-            </li>
-            <img src={check} className='check' alt='check' />
-            <li className='liCheck'>
-              Informacion estadistica de facil acceso
-            </li>
-            <img src={check} className='check' alt='check' />
-            <li className='liCheck'>
-              Informacion estadistica de facil acceso de forma eficiente
-            </li>
-          </ul>
           <div>
-          perra
+            <Fade left>
+              <div className='itemList'>
+                <img src={check} className='check' alt='check' />
+                <p className='liCheck'>Ahórrate dolores de cabeza y dinero con un sistemade control de inventarios confiable,practico y facil de usar acorde a tus necesidades.</p>
+              </div>
+
+              <div className='itemList'>
+                <img src={check} className='check' alt='check' />
+                <p className='liCheck'>mejora tus ventas con nosotros</p>
+              </div>
+
+              <div className='itemList'>
+                <img src={check} className='check' alt='check' />
+                <p className='liCheck'>  Informacion estadistica de facil acceso</p>
+              </div>
+
+              <div className='itemList'>
+                <img src={check} className='check' alt='check' />
+                <p className='liCheck'>Informacion estadistica de facil acceso de forma eficiente</p>
+              </div>
+
+            </Fade>
           </div>
+
+          <div>
+            <Fade right>
+              <div>
+                <img src={pos} className='posimg' alt='' />
+              </div>
+            </Fade>
+          </div>
+
         </div>
       </div>
-      ooeooeoee no seas caballo
     </div>
   );
 };

@@ -8,12 +8,15 @@ const CartHome = ({ titulo, icon, contenido }) => {
       <p className='cartP'>{titulo}</p>
       <img src={icon} className='cartIcon' alt='' />
       <div className='cartContenido'>
-        {contenido}
+        <div className='content'>
+          {contenido}
+        </div>
+
         <button
           type='button'
           className='cartButton'
         >
-            Conoce mas
+            Conocer más
         </button>
       </div>
     </div>

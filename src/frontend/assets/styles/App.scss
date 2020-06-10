@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
 @import "./Variables.scss";
+@import "./Mixins.scss";
 
 body {
   margin: 0;
@@ -13,9 +14,19 @@ li {
 }
 
 .Landing_con {
+  //    
   background-color: #fff;
-  height: 600px;
-  width: 1250px;
+  height: 1fr;
+  @include responsive(small){
+    width: 550px;
+  }
+  @include responsive(medium){
+    width: 700px;
+  }
+  @include responsive(large){
+    width: 1250px;
+ }
+
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -27,7 +38,19 @@ li {
 
 .Landing_Cart {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns:  1fr;
+  @include responsive(small){
+    grid-template-columns: 1fr;
+ }
+  @include responsive(medium){
+    grid-template-columns: repeat(2, 1fr);
+ }
+  @include responsive(large){
+    grid-template-columns: repeat(3, 1fr);
+ }
+
+
+
 }
 .Landing_Domi {
   display: flex;
@@ -37,4 +60,12 @@ li {
   font-size: 30px;
   z-index: 1000;
   top:200px;
+}
+.hero__image{
+  height: 300px;
+  width: 1fr;
+  //border:solid 1px red;
+  margin: 0;
+  background: url('../static/image-mockups.png')  bottom no-repeat, url('../static/bankMobile.svg') center no-repeat ;
+  background-size: 345px, cover;
 }

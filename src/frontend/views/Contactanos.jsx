@@ -1,7 +1,9 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/no-unused-state */
 /* eslint-disable react/destructuring-assignment */
 // eslint-disable-next-line max-classes-per-file
 import React, { Component } from 'react';
+import Particles from "react-particles-js";
 
 import contacto from '../assets/static/contacto.jpg';
 import datos from '../assets/static/Datos.svg';
@@ -92,10 +94,49 @@ class Contactanos extends Component {
     const handleSubmit = (event) => {
       event.preventDefault();
     };
+    const particleOPT = {
+      particles: {
+        number: {
+          value: 80,
+          density: {
+            enable: true,
+            value_area: 800,
+          },
+        },
+        color: {
+          value: "#ffffff",
+        },
+        size: {
+          value: 1.5,
+          random: false,
+          anim: {
+            speed: 30,
+            size_min: 0.1,
+            sync: false,
+          },
+          opacity: {
+            value: 1000,
+            random: false,
+          },
+        },
+        line_linked: {
+          enable: true,
+          random: false,
+          distance: 100,
+          color: "#FFFFFF",
+          opacity: 0.9,
+        },
+      },
+    };
 
     return (
-      <div className='container'>
-        <img src={contacto} alt='' className='fondo-blanco' />
+      <div>
+        <div className='particles'>
+          <Particles params={particleOPT} />
+        </div>
+
+        <img src={contacto} alt='' className='fotoxx' />
+
         <div className='containerwhite'>
           <div className='contacto'>
             <p className='contactoTitle'>Formulario de contacto</p>

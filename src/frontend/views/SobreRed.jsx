@@ -1,5 +1,4 @@
 import React from 'react';
-import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 
 import fondo from '../assets/static/fondo-blanco.png';
@@ -23,19 +22,23 @@ const SobreRed = () => {
         </div>
 
         <div className='contenido__'>
-          <Zoom>
+          <Fade left>
             <p className='parrafo'>
             La base de toda empresa comercial es la compra y venta de bienes o servicios; de aquí la importancia del manejo del inventario por parte de la misma. Este manejo contable permitirá a la PYME mantener el control oportunamente, así como también conocer al final del período contable un estado confiable de la situación económica de la misma
             </p>
-          </Zoom>
-          <img className='img' src={img} alt='' />
-          <img className='img1' src={img1} alt='' />
+          </Fade>
+          <Fade right>
+            <img className='img' src={img} alt='' />
+          </Fade>
+          <Fade left>
+            <img className='img1' src={img1} alt='' />
+          </Fade>
 
-          <Zoom>
+          <Fade right>
             <p className='parrafo'>
             La base de toda empresa comercial es la compra y venta de bienes o servicios; de aquí la importancia del manejo del inventario por parte de la misma. Este manejo contable permitirá a la PYME mantener el control oportunamente, así como también conocer al final del período contable un estado confiable de la situación económica de la misma
             </p>
-          </Zoom>
+          </Fade>
 
         </div>
 

@@ -5,6 +5,10 @@ $COLOR_PRINCIPAL:#004E69;
 $COLOR_NEGRO:#1B1F26;
 $COLOR_TRANSPARENT: rgba(255, 255, 255, 0.5);
 
+$white: hsl(0, 0%, 100%);
+$lime_green:hsl(136, 65%, 51%);
+$rightCyan: hsl(192, 70%, 51%);
+
 $BOX_SHADOW: 0px 2px 4px 1px rgba(0,0,0,0.17);
 
 $FUENTE_MONSE: 'Montserrat';
@@ -12,3 +16,10 @@ $FUENTE_MONSE: 'Montserrat';
 
 
 $FUENTE_DOMI:'Bangers', cursive;
+
+$breakpoints: (
+    small: 480px,
+    medium: 768px,
+    large: 900px,
+
+); 

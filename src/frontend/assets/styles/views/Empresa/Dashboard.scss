@@ -1,5 +1,6 @@
 @import "../../Variables.scss";
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
+@import '~antd/dist/antd.css';
 body{
     margin: 0;
     font-family: "Open Sans", sans-serif;
@@ -12,6 +13,7 @@ body{
     grid-template-areas: "sidebar contenedormenu"
                          "sidebar contenedorhm "  ;
 }
+
 .sidebar{
 grid-area: sidebar ;
 }

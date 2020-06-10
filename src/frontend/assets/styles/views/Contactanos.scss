@@ -1,17 +1,31 @@
 @import "../Variables.scss";
 
+
 .containerContactUs {
-  position: relative;
+
   height: 100%;
-}
+} 
 .containerwhite {
   width: 1200px;
   height: 600px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.2);
   position: absolute;
-  top: 20px;
+  top: 90px;
   left: 70px;
+}
+.particles{
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+}
+.fotoxx{
+  width: 100%;
+  height: 680px;
+  position: absolute;
+  z-index: -2;
+  left: 0;
 }
 .hmx {
   display: flex;
