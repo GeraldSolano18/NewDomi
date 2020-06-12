@@ -46,12 +46,13 @@ const Slides = ({ images, interval }) => {
             <p>DomiTiendas</p>
           </div>
         </div>
-        <div className='Slider_prueba'>
+
+        {/* <div className='Slider_prueba'>
           <div className='Slide_container_titulo'>
             {images[activeIndex].titulo }
           </div>
 
-        </div>
+        </div> */}
 
       </div>
     </div>

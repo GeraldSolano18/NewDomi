@@ -1,52 +1,44 @@
 import React from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
-import Particles from 'react-particles-js';
+import { Link } from 'react-router-dom';
+import logo from '../assets/static/logowhite.svg';
 import '../assets/styles/components/Footer.scss';
 
 const Footer = () => {
-  const particleOPT = {
-    particles: {
-      number: {
-        value: 70,
-        density: {
-          enable: true,
-          value_area: 700,
-        },
-      },
-      color: {
-        value: '#ffffff',
-      },
-      size: {
-        value: 2,
-        random: false,
-        anim: {
-          speed: 30,
-          size_min: 0.1,
-          sync: false,
-        },
-        opacity: {
-          value: 1000,
-          random: false,
-        },
-      },
-      line_linked: {
-        enable: true,
-      },
-    },
-  };
-
   return (
-    <div className='pruebaa'>
-
-      <div className='Footer'>
-
-        <div>
-          <Particles params={particleOPT} className='particless' />
+    <footer className='footer'>
+      <div className='wrapper'>
+        <div className='Landing_Do '>
+          <img className='footer__logo' src={logo} alt=' ' />
+          <p>DomiTiendas</p>
+        </div>
+        <div className='footer__social'>
+          <span className='icon__facebook' />
+          <span className='icon__instagram' />
+          <span className='icon__twitter' />
+          <span className='icon__youtube' />
+          <span className='icon__pinterest' />
+        </div>
+        <div className='footer__links'>
+          <Link className='footer__link' to='/sobreRedStore'><p>Link</p></Link>
+          <Link className='footer__link' to='/'><p>About us</p></Link>
+          <Link className='footer__link' to='/'><p>About us</p></Link>
+          <Link className='footer__link' to='/'><p>About us</p></Link>
+          <Link className='footer__link' to='/'><p>About us</p></Link>
+          <Link className='footer__link' to='/'><p>About us</p></Link>
+        </div>
+        <div className=' footer__button'>
+          <button
+            type='button'
+            className='cartButton'
+          >
+            Contactanos
+          </button>
         </div>
 
-      </div>
+        <p className='footer__copyright'>@DomiTiendas || Todos los derechos reservados</p>
 
-    </div>
+      </div>
+    </footer>
   );
 };
 

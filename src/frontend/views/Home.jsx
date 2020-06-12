@@ -1,8 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import Particles from "react-particles-js";
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
+import Bounce from 'react-reveal/Bounce';
+import ImpactoCard from '../components/ImpactoCard';
+import BannerHero from '../components/BannerHero';
+import Footer from '../components/Footer';
 
 import Slides from '../components/Slides';
 import CartHome from '../components/CartHome';
@@ -10,6 +13,10 @@ import CartHome from '../components/CartHome';
 import Mision from '../assets/static/Mision.svg';
 import Vision from '../assets/static/Vision.svg';
 import Valores from '../assets/static/Valores.svg';
+import online from '../assets/static/icon_online.svg';
+import bud from '../assets/static/icon_bud.svg';
+import onboarding from '../assets/static/icon_onboarding.svg';
+import api from '../assets/static/icon_api.svg';
 import '../assets/styles/App.scss';
 
 const images = [
@@ -31,41 +38,6 @@ const images = [
   }
 // eslint-disable-next-line comma-dangle
 ];
-const particleOPT = {
-  particles: {
-    number: {
-      value: 80,
-      density: {
-        enable: true,
-        value_area: 600,
-      },
-    },
-    color: {
-      value: "#000000",
-    },
-    size: {
-      value: 1.5,
-      random: false,
-      anim: {
-        speed: 30,
-        size_min: 0.1,
-        sync: false,
-      },
-      opacity: {
-        value: 1000,
-        random: false,
-      },
-    },
-    line_linked: {
-      enable: true,
-      random: false,
-      distance: 100,
-      color: "#000000",
-      opacity: 0.9,
-    },
-  },
-};
-
 const Home = () => {
   return (
     <div>
@@ -75,6 +47,11 @@ const Home = () => {
       />
 
       <div className='Landing_con'>
+        <Bounce>
+          <h1 className='title__h11'>
+          Un título descriptivo
+          </h1>
+        </Bounce>
 
         <div className='Landing_Cart'>
           <div>
@@ -110,56 +87,116 @@ const Home = () => {
         </div>
 
       </div>
+      {/* <section className='hero'>
+        <div className='wrapper'>
+          <div className='hero__content'>
+            <div className='hero__image' />
+            <div className='hero__description'>
+              <h1 className='title__h1'>
+          Texto principal
+              </h1>
+              <p className='copy'>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas laboriosam culpa ipsam sapiente, facere officia, non libero dolorum perspiciatis in magni repellendus accusantium tempora accusamus quos enim necessitatibus alias aspernatur.
+              </p>
+              <button
+                type='button'
+                className='cartButton'
+              >
+            Conocer más
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </section> */}
+
       <div className='two_ph'>
         <Fade left>
-          <div className='two_1'>
-            <p className='two_title'>Impacto Social</p>
-            <p className='two_content'>
-          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico de tipografías Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
-          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
-          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
-            </p>
-            <button type='button' className='two_button'> VER MÁS</button>
-          </div>
+          <ImpactoCard
+            title='Impacto Social'
+            content='Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
+            Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
+            Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones'
+            claseCss='two_1'
+          />
         </Fade>
         <Fade right>
-          <div className='two_2'>
-            <p className='two_title'>Impacto económico</p>
-            <p className='two_content'>
-          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
+          <ImpactoCard
+            title='Impacto economico'
+            content='Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
           Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
-          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
-            </p>
-            <button type='button' className='two_button'> VER MÁS</button>
-          </div>
+          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones'
+            claseCss='two_2'
+          />
         </Fade>
 
       </div>
-
       <Fade>
-        <div className='hero_banner'>
-          <div className='hero_banner_content'>
-            <div className='particles_banner'>
-              <Particles height='500px' width='751px' params={particleOPT} />
-            </div>
-            <div className='hero_banner_center'>
-              <h1 className='hero_banner_h1'>Lorem Title App </h1>
-              <p className='hero_banner_p'>
-          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico de tipografías Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
-          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
-          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
-              </p>
-              <p className='hero_banner_p'>
-        es de tipografías
-          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
-              </p>
-            </div>
-          </div>
-          <div className='hero_banner_img' />
-        </div>
+        <BannerHero />
       </Fade>
 
-      <div className='hero__image' />
+      <div className='why'>
+        <div className='wrapper'>
+          <Bounce>
+            <h1 className='title__h1'>
+            ¿Por qué elegirnos a nosotros?
+            </h1>
+          </Bounce>
+
+          <div className='why__grid'>
+            <Zoom>
+              <div className='why_item'>
+                <img src={api} alt='' />
+                <h1 className='title__h2'>
+               Online Shop
+                </h1>
+                <p className='copy'>
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas laboriosam culpa ipsam sapiente
+                </p>
+              </div>
+            </Zoom>
+            <Zoom>
+              <div className='why_item'>
+                <img src={online} alt='' />
+                <h1 className='title__h2'>
+Online Shop
+                </h1>
+                <p className='copy'>
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas laboriosam culpa ipsam sapiente
+                </p>
+              </div>
+            </Zoom>
+            <Zoom>
+              <div className='why_item'>
+                <img src={bud} alt='' />
+                <h1 className='title__h2'>
+Online Shop
+                </h1>
+                <p className='copy'>
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas laboriosam culpa ipsam sapiente, facere officia
+                </p>
+              </div>
+            </Zoom>
+            <Zoom>
+              <div className='why_item'>
+                <img src={onboarding} alt='' />
+                <h1 className='title__h2'>
+Online Shop
+                </h1>
+                <p className='copy'>
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas laboriosam culpa ipsam sapiente, facere officia
+                </p>
+              </div>
+            </Zoom>
+
+          </div>
+
+        </div>
+
+      </div>
+      <Fade>
+        <Footer />
+      </Fade>
 
     </div>
   );
