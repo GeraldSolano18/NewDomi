@@ -24,7 +24,7 @@ const SobreRed = () => {
         <div className='contenido__'>
           <Fade left>
             <p className='parrafo'>
-            La base de toda empresa comercial es la compra y venta de bienes o servicios; de aquí la importancia del manejo del inventario por parte de la misma. Este manejo contable permitirá a la PYME mantener el control oportunamente, así como también conocer al final del período contable un estado confiable de la situación económica de la misma
+              La base de toda empresa comercial es la compra y venta de bienes o servicios; de aquí la importancia del manejo del inventario por parte de la misma. Este manejo contable permitirá a la PYME mantener el control oportunamente, así como también conocer al final del período contable un estado confiable de la situación económica de la misma
             </p>
           </Fade>
           <Fade right>
@@ -36,7 +36,7 @@ const SobreRed = () => {
 
           <Fade right>
             <p className='parrafo'>
-            La base de toda empresa comercial es la compra y venta de bienes o servicios; de aquí la importancia del manejo del inventario por parte de la misma. Este manejo contable permitirá a la PYME mantener el control oportunamente, así como también conocer al final del período contable un estado confiable de la situación económica de la misma
+              La base de toda empresa comercial es la compra y venta de bienes o servicios; de aquí la importancia del manejo del inventario por parte de la misma. Este manejo contable permitirá a la PYME mantener el control oportunamente, así como también conocer al final del período contable un estado confiable de la situación económica de la misma
             </p>
           </Fade>
 

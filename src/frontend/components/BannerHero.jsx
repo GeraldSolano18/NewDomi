@@ -48,10 +48,10 @@ const BannerHero = () => {
           <div className='hero_banner_center'>
             <h1 className='hero_banner_h1'> Lorem ipsum es el texto que emostraciones de tipografía</h1>
             <p className='hero_banner_p'>
-            Lorem ipsum es el texto que sLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografíae usa habitualmente en diseño gráfico en demostraciones de tipografía
+              Lorem ipsum es el texto que sLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografíae usa habitualmente en diseño gráfico en demostraciones de tipografía
             </p>
             <p className='hero_banner_p'>
-            Lorem ipsum es el texto que sLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografíae usa habitualmente en diseño gráfico en demostraciones de tipografía
+              Lorem ipsum es el texto que sLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografíae usa habitualmente en diseño gráfico en demostraciones de tipografía
             </p>
           </div>
         </div>

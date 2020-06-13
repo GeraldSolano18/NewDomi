@@ -49,7 +49,7 @@ const Home = () => {
       <div className='Landing_con'>
         <Bounce>
           <h1 className='title__h11'>
-          Un título descriptivo
+            Un título descriptivo
           </h1>
         </Bounce>
 
@@ -139,7 +139,7 @@ const Home = () => {
         <div className='wrapper'>
           <Bounce>
             <h1 className='title__h1'>
-            ¿Por qué elegirnos a nosotros?
+              ¿Por qué elegirnos a nosotros?
             </h1>
           </Bounce>
 
@@ -148,10 +148,10 @@ const Home = () => {
               <div className='why_item'>
                 <img src={api} alt='' />
                 <h1 className='title__h2'>
-               Online Shop
+                  Online Shop
                 </h1>
                 <p className='copy'>
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas laboriosam culpa ipsam sapiente
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas laboriosam culpa ipsam sapiente
                 </p>
               </div>
             </Zoom>
@@ -159,10 +159,10 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas laboriosam culpa 
               <div className='why_item'>
                 <img src={online} alt='' />
                 <h1 className='title__h2'>
-Online Shop
+                  Online Shop
                 </h1>
                 <p className='copy'>
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas laboriosam culpa ipsam sapiente
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas laboriosam culpa ipsam sapiente
                 </p>
               </div>
             </Zoom>
@@ -170,10 +170,10 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas laboriosam culpa 
               <div className='why_item'>
                 <img src={bud} alt='' />
                 <h1 className='title__h2'>
-Online Shop
+                  Online Shop
                 </h1>
                 <p className='copy'>
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas laboriosam culpa ipsam sapiente, facere officia
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas laboriosam culpa ipsam sapiente, facere officia
                 </p>
               </div>
             </Zoom>
@@ -181,10 +181,10 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas laboriosam culpa 
               <div className='why_item'>
                 <img src={onboarding} alt='' />
                 <h1 className='title__h2'>
-Online Shop
+                  Online Shop
                 </h1>
                 <p className='copy'>
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas laboriosam culpa ipsam sapiente, facere officia
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas laboriosam culpa ipsam sapiente, facere officia
                 </p>
               </div>
             </Zoom>

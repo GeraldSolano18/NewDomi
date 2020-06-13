@@ -24,7 +24,7 @@ const Comercios = () => {
         <div>
           <Zoom>
             <p className='pBlue'>
-Red store permite a los comercios Nicaraguense maximimar beneficios y evitar completamente las perdidasmediante un sistema de control
+              Red store permite a los comercios Nicaraguense maximimar beneficios y evitar completamente las perdidasmediante un sistema de control
             </p>
           </Zoom>
 

@@ -149,7 +149,7 @@ class Contactanos extends Component {
               <div>
                 <div className='Datos'>
                   <img src={datos} alt='' />
-                    Datos Generales
+                  Datos Generales
                 </div>
                 <ImputControlado
                   onChange={this.actualizar}
@@ -176,7 +176,7 @@ class Contactanos extends Component {
               <div>
                 <div className='Datos'>
                   <img src={negocio} alt='' />
-                    Datos del negocio
+                  Datos del negocio
                 </div>
                 <ImputControlado
                   onChange={this.actualizar}
@@ -192,7 +192,7 @@ class Contactanos extends Component {
                   <option value='Emprendedor'>Emprendedor</option>
                 </select>
                 <div className='containerCheck'>
-                ¿Qué productos ofrecerás en tu empresa?
+                  ¿Qué productos ofrecerás en tu empresa?
 
                   <input type='checkbox' />
                 </div>
@@ -201,7 +201,7 @@ class Contactanos extends Component {
 
             </div>
             <button type='submit' className='sub'>
-                  Enviar datos
+              Enviar datos
             </button>
           </form>
 

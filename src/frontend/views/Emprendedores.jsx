@@ -22,7 +22,7 @@ const Emprededores = () => {
         <div>
           <Zoom>
             <p className='pBlue'>
-DomiTiendas permite a los comercios Nicaraguense maximimar beneficios y evitar completamente las perdidasmediante un sistema de control
+              DomiTiendas permite a los comercios Nicaraguense maximimar beneficios y evitar completamente las perdidasmediante un sistema de control
             </p>
           </Zoom>
 

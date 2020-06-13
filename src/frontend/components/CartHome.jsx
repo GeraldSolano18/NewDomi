@@ -16,7 +16,7 @@ const CartHome = ({ titulo, icon, contenido }) => {
           type='button'
           className='cartButton'
         >
-            Conocer más
+          Conocer más
         </button>
       </div>
     </div>
