@@ -1,72 +1,59 @@
-
-.Carrousel{
-  width: 100%;
-  height: 100vh;
-  background: black;
+.Carrousel {
+  width: 700px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
   overflow: hidden;
   position: relative;
 }
-
-.Carrousel_Img{
-    width: 100%;
-    position: absolute;
-}
-.Carrousel_Buttons{
- top: 0.5em;
- z-index: 10;
- position: absolute;
-
-
-    margin-left:auto;
-    margin-right:auto;
+.Carrousel_Img {
+  width: 700px;
+  height: 400px;
 
 }
-
-.Carrousel_btn{
-    padding: 6px;
-    height: 50px;
-    width: 50px;
-    margin-left: 15px;
-    border-radius: 100%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: #06807A;
-    border: none;
-    cursor: pointer;
-    
-
+.Carrousel_Buttons {
+  z-index: 10;
+  position: absolute;
+  top: calc(50% - 35px);
 }
-.Carrousel_Icon{
-    height: 50px;
-    width: 50px; 
-    margin: 0;
+.rigth{
+  left:0px ;
+}
+.left{
+  right: 0px;
 }
 
-//Para cuando el componente se monta 
-.slide-enter{
-    position: absolute;
-    transform: translateX(-100%);
-    opacity: 0;
 
-}
-.slide-enter-active{
-    position: absolute;
-    transform: translateX(0%);
-    opacity: 1;
-    transition: all 1s ease;
+.Carrousel_Icon {
+  height: 50px;
+  width: 50px;
+  margin: 0;
 }
 
-//Para cuando el componente se desmonta 
-.slide-exit{
-    position: absolute;
-    transform: translateX(0%);
-    opacity: 1;
+//Para cuando el componente se monta
+.slide-enter {
+  position: absolute;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.slide-enter-active {
+  position: absolute;
+  transform: translateX(0%);
+  opacity: 1;
+  transition: all 1s ease;
 }
 
-.slide-exit-active{
-    position: absolute;
-    transform: translateX(100%);
-    opacity: 0;
-    transition: all 1s ease;
+//Para cuando el componente se desmonta
+.slide-exit {
+  position: absolute;
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.slide-exit-active {
+  position: absolute;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 1s ease;
 }

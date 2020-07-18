@@ -1,13 +1,15 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import fondo from '../assets/static/fondo-blanco.png';
 import Carrousel from '../components/Carrousel';
 import Charts from '../components/Charts';
-
+import { BannerInventario } from '../components/bannerInventario';
 import '../assets/styles/views/ControlInventario.scss';
 
 const ControlInventario = () => {
   return (
     <div>
+      <BannerInventario />
+
       <Carrousel
         images={
           [
@@ -17,21 +19,16 @@ const ControlInventario = () => {
           ]
         }
       />
-      <div className='container'>
-        <img src={fondo} alt='blancofondo' className='fondo-blanco' />
-        <div className='contenido'>
-          <div className='Chart_cart'>
-            <Charts />
-            Recibi informes estadisticos basados en datos reales
-            <p className='Chart_p'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos enim blanditiis provident quidem quisquam. Reiciendis nam ea voluptate aliquid soluta nesciunt dolor, maxime, sequi adipisci ducimus unde, quo possimus praesentium.
-            </p>
-          </div>
 
-        </div>
+      <div className='Chart_cart'>
+        <Charts />
+        Recibi informes estadisticos basados en datos reales
+        <p className='Chart_p'>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos enim blanditiis provident quidem quisquam. Reiciendis nam ea voluptate aliquid soluta nesciunt dolor, maxime, sequi adipisci ducimus unde, quo possimus praesentium.
+        </p>
       </div>
-
     </div>
+
   );
 };
 export default ControlInventario;

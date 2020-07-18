@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/styles/components/Header.scss';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Logo from '../assets/static/logo.svg';
 
 const Header = () => {
@@ -8,49 +8,48 @@ const Header = () => {
 
     <div className='Header'>
       <div>
-        <Link to='/'>
+        <NavLink to='/'>
           <img src={Logo} className='header__img' alt='logoDomi' />
-        </Link>
+        </NavLink>
       </div>
       <div className='Header__menu'>
-        <ul>
-          <li>
-            <Link to='/sobreRedStore' className='Link'>
-              Sobre DomiTiendas
-            </Link>
-          </li>
-          <li>
-            <Link to='/comercios' className='Link'>
-              Comercios
-            </Link>
+        <span>
+          <NavLink to='/sobreRedStore' className='NavLink' activeClassName='activeItem'>
+            Sobre DomiTiendas
+          </NavLink>
+        </span>
 
-          </li>
-          <li>
-            <Link to='/emprededores' className='Link'>
-              Emprendedores
-            </Link>
-          </li>
-          <li>
-            <Link to='/control' className='Link'>
-              Control de inventario
-            </Link>
-          </li>
-          <li>
-            <Link to='/desicion' className='Link'>
+        <span>
+          <NavLink to='/comercios' className='NavLink' activeClassName='activeItem'>
+            Comercios
+          </NavLink>
+
+        </span>
+        <span>
+          <NavLink to='/emprededores' className='NavLink' activeClassName='activeItem'>
+            Emprendedores
+          </NavLink>
+        </span>
+        <span>
+          <NavLink to='/control' className='NavLink' activeClassName='activeItem'>
+            Control de inventario
+          </NavLink>
+        </span>
+        {/* <span>
+            <NavLink to='/desicion' className='NavLink' activeClassName='activeItem'>
               Toma de desiciones
-            </Link>
-          </li>
-          <li>
-            <Link to='/aumenta' className='Link'>
+            </NavLink>
+          </span>
+          <span>
+            <NavLink to='/aumenta' className='NavLink' activeClassName='activeItem'>
               Aumenta tus ventas
-            </Link>
-          </li>
-          <li>
-            <Link to='/contactanos' className='Link'>
-              Contactanos
-            </Link>
-          </li>
-        </ul>
+            </NavLink>
+          </span> */}
+        <span>
+          <NavLink to='/contactanos' className='NavLink' activeClassName='activeItem'>
+            Contactanos
+          </NavLink>
+        </span>
       </div>
 
     </div>

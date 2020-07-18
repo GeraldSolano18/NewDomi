@@ -131,8 +131,8 @@ class Contactanos extends Component {
 
     return (
       <div>
-        <div className='particles'>
-          <Particles params={particleOPT} />
+        <div>
+          <Particles className='particles' params={particleOPT} />
         </div>
 
         <img src={contacto} alt='' className='fotoxx' />

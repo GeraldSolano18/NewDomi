@@ -14,6 +14,10 @@ p {
 li {
   list-style: none;
 }
+ul{
+  margin:0;
+  padding: 0;
+}
 .two_ph{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -86,9 +90,7 @@ li {
     background-color: $COLOR_TRANSPARENT;   
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-  //   grid-template-areas: "Paticles
-  //                          Image";
-  //
+
  }
   .hero_banner_img{
     grid-area: Image;

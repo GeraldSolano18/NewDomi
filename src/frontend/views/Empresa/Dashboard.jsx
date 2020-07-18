@@ -5,7 +5,7 @@ import React from 'react';
 import { Layout, Menu } from 'antd';
 import DashMenu from '../../components/DashboardMenu';
 //import SideBar from '../../components/SideBar';
-//import TableTest from './TableTest';
+import TableTest from './TableTest';
 import HeaderEm from './HeaderEm';
 import '../../assets/styles/views/Empresa/Dashboard.scss';
 import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
@@ -57,7 +57,7 @@ const Dashboard = () => {
               Conten
               <div>
                 <DashMenu />
-                {/* <TableTest /> */}
+                <TableTest />
               </div>
               t
             </Content>

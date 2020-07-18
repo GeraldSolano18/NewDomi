@@ -43,7 +43,7 @@ const BannerHero = () => {
       <div className='hero_banner_props_left'>
         <div className='hero_banner_content'>
           <div className='particles_banner'>
-            <Particles height='500px' width='751px' params={particleOPT} />
+            <Particles height='500px' width='651px' params={particleOPT} />
           </div>
           <div className='hero_banner_center'>
             <h1 className='hero_banner_h1'> Lorem ipsum es el texto que emostraciones de tipografía</h1>
