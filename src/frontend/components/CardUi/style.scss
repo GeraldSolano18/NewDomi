@@ -1,0 +1,86 @@
+.CardUi_Container {
+  background: linear-gradient(45deg, rgb(226, 219, 243), rgb(213, 241, 250));
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.CardUi {
+    cursor: pointer;
+  position: relative;
+  width: 300px;
+  height: 420px;
+  background: #fff;
+  margin: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+///////////////////EFECTO DE HOVER /////////////////////////
+.CardUi_Container:hover .CardUi {
+    filter: blur(10px);
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+.CardUi_Container .CardUi:hover {
+    filter: blur(0px);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+///////////////////EFECTO DE HOVER /////////////////////////
+
+.CardUi_Circle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  clip-path: circle(180px at center 0);
+  text-align: center;
+  h2 {
+    margin: 0;
+    padding: 30px 0;
+    font-size: 4.5em;
+    color: #fff;
+  }
+  img{
+      width: 50px;
+  }
+}
+.CardUi_Content {
+  position: absolute;
+  bottom: 10px;
+  padding: 20px;
+  text-align: center;
+  p {
+    color: #666;
+  }
+  button {
+      cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 40px;
+    margin-top: 20px;
+    border:none;
+  }
+}
+//COLOR BY CHILD
+.CardUi_Container .CardUi:nth-child(1) .CardUi_Circle,
+.CardUi_Container .CardUi:nth-child(1) .CardUi_Content button {
+    background: #755EBF;
+}
+.CardUi_Container .CardUi:nth-child(2) .CardUi_Circle,
+.CardUi_Container .CardUi:nth-child(2) .CardUi_Content button {
+    background: #0797FA;
+}
+.CardUi_Container .CardUi:nth-child(3) .CardUi_Circle,
+.CardUi_Container .CardUi:nth-child(3) .CardUi_Content button {
+    background: #FFDC70;
+}
+

@@ -6,13 +6,10 @@ import Bounce from 'react-reveal/Bounce';
 import ImpactoCard from '../components/ImpactoCard';
 import BannerHero from '../components/BannerHero';
 import Footer from '../components/Footer';
+import { CardUi } from '../components/CardUi';
+import { CardHover } from '../components/CardHover';
 
 import Slides from '../components/Slides';
-import CartHome from '../components/CartHome';
-
-import Mision from '../assets/static/Mision.svg';
-import Vision from '../assets/static/Vision.svg';
-import Valores from '../assets/static/Valores.svg';
 import online from '../assets/static/icon_online.svg';
 import bud from '../assets/static/icon_bud.svg';
 import onboarding from '../assets/static/icon_onboarding.svg';
@@ -53,63 +50,31 @@ const Home = () => {
           </h1>
         </Bounce>
 
-        <div className='Landing_Cart'>
-          <div>
-            <Zoom>
-              <CartHome
-                titulo='Mision'
-                icon={Mision}
-                contenido='Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías '
-              />
-            </Zoom>
-          </div>
-          <div>
-            <Zoom>
-              <CartHome
-                titulo='Vision'
-                icon={Vision}
-                contenido='Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías '
-              />
-            </Zoom>
-
-          </div>
-          <div>
-            <Zoom>
-              <CartHome
-                titulo='Valores'
-                icon={Valores}
-                contenido='Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías '
-              />
-            </Zoom>
-
-          </div>
-
-        </div>
-
       </div>
-      {/* <section className='hero'>
+      <section className='hero'>
         <div className='wrapper'>
           <div className='hero__content'>
             <div className='hero__image' />
             <div className='hero__description'>
               <h1 className='title__h1'>
-          Texto principal
+                Texto principal
               </h1>
               <p className='copy'>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas laboriosam culpa ipsam sapiente, facere officia, non libero dolorum perspiciatis in magni repellendus accusantium tempora accusamus quos enim necessitatibus alias aspernatur.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas laboriosam culpa ipsam sapiente, facere officia, non libero dolorum perspiciatis in magni repellendus accusantium tempora accusamus quos enim necessitatibus alias aspernatur.
               </p>
               <button
                 type='button'
                 className='cartButton'
               >
-            Conocer más
+                Conocer más
               </button>
             </div>
           </div>
 
         </div>
-      </section> */}
+      </section>
 
+      <CardUi />
       <div className='two_ph'>
         <Fade left>
           <ImpactoCard
@@ -134,7 +99,7 @@ const Home = () => {
       <Fade>
         <BannerHero />
       </Fade>
-
+      <CardHover />
       <div className='why'>
         <div className='wrapper'>
           <Bounce>
@@ -194,6 +159,7 @@ const Home = () => {
         </div>
 
       </div>
+
       <Fade>
         <Footer />
       </Fade>

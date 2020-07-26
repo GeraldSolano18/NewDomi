@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
 @import "./Variables.scss";
 @import "./Mixins.scss";
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  overflow-y: scroll;
-  scroll-behavior: initial;
+  // overflow-y: scroll;
+  // scroll-behavior: initial;
 }
 p {
   margin: 0;
@@ -222,25 +226,6 @@ line-height: 1.7em;
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 
-
-
-
-.Landing_Cart {
-  display: grid;
-  grid-template-columns:  1fr;
-  @include responsive(small){
-    grid-template-columns: 1fr;
- }
-  @include responsive(medium){
-    grid-template-columns: repeat(2, 1fr);
- }
-  @include responsive(large){
-    grid-template-columns: repeat(3, 1fr);
- }
-
-
-
-}
 .Landing_Domi {
   display: flex;
   align-items: center;
