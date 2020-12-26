@@ -51,7 +51,7 @@ const Home = () => {
         </Bounce>
 
       </div>
-      <section className='hero'>
+      {/* <section className='hero'>
         <div className='wrapper'>
           <div className='hero__content'>
             <div className='hero__image' />
@@ -72,7 +72,7 @@ const Home = () => {
           </div>
 
         </div>
-      </section>
+      </section> */}
 
       <CardUi />
       <div className='two_ph'>
