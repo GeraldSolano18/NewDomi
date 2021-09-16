@@ -46,7 +46,7 @@ const Home = () => {
       <div className='Landing_con'>
         <Bounce>
           <h1 className='title__h11'>
-            Un título descriptivo
+            Conozca sobre nosostyros 
           </h1>
         </Bounce>
 
