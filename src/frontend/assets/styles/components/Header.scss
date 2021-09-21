@@ -2,17 +2,21 @@
 @import "../Mixins.scss";
 .Header {
   background-color: $COLOR_PRINCIPAL;
-
   bottom: 0;
   z-index: 100;
-  width: 100%;
-  height: 60px;
+  height: 65px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
 }
+
 .header__img {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   margin-left: 10px;
 }
 .fondo {

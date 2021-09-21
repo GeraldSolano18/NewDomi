@@ -3,7 +3,6 @@ import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import Acordeon from '../components/Acordeon';
 import fondo from '../assets/static/fondo-blanco.png';
-import Emprendedores from '../assets/static/Emprendedores.png';
 import logo from '../assets/static/logo.svg';
 import composicion from '../assets/static/composicion.jpg';
 
@@ -14,7 +13,6 @@ const Emprededores = () => {
     <div className='container'>
       <img src={fondo} alt='blancofondo' className='fondo-blanco' />
       <div className='contenido'>
-        <img src={Emprendedores} className='banner' alt='Banner' />
         <div className='seccion'>
           <p className='titulo'>Emprendedores</p>
           <img className='header__img' src={logo} alt='logo' />
