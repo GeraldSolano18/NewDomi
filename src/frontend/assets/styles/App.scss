@@ -169,6 +169,14 @@ ul {
     @include title;
     font-size: 1em;
   }
+  &__text {
+    text-align: center;
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.8;
+    margin: 3rem 7rem ;
+  }
 }
 .wrapper {
   padding: 0 1.5em;
