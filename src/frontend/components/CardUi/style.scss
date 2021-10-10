@@ -1,17 +1,15 @@
 .CardUi_Container {
-  background: linear-gradient(45deg, rgb(226, 219, 243), rgb(213, 241, 250));
-  background-attachment: fixed;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  column-gap: 3rem;
+  place-items: center;
 }
 .CardUi {
-    cursor: pointer;
+  cursor: pointer;
   position: relative;
-  width: 300px;
-  height: 420px;
+  width: 500px;
+  height: 480px;
   background: #fff;
   margin: 30px;
   border-radius: 20px;
@@ -21,14 +19,14 @@
 }
 ///////////////////EFECTO DE HOVER /////////////////////////
 .CardUi_Container:hover .CardUi {
-    filter: blur(10px);
-    transform: scale(0.9);
-    opacity: 0.5;
+  filter: blur(10px);
+  transform: scale(0.9);
+  opacity: 0.5;
 }
 .CardUi_Container .CardUi:hover {
-    filter: blur(0px);
-    transform: scale(1.1);
-    opacity: 1;
+  filter: blur(0px);
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 ///////////////////EFECTO DE HOVER /////////////////////////
@@ -38,7 +36,7 @@
   width: 100%;
   height: 100%;
   background: #000;
-  clip-path: circle(180px at center 0);
+  clip-path: circle(250px at center 0);
   text-align: center;
   h2 {
     margin: 0;
@@ -46,20 +44,21 @@
     font-size: 4.5em;
     color: #fff;
   }
-  img{
-      width: 50px;
+  img {
+    width: 80px;
   }
 }
 .CardUi_Content {
   position: absolute;
-  bottom: 10px;
+  top: 280px;
   padding: 20px;
   text-align: center;
   p {
     color: #666;
+    text-align: justify;
   }
   button {
-      cursor: pointer;
+    cursor: pointer;
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -67,20 +66,19 @@
     color: #fff;
     border-radius: 40px;
     margin-top: 20px;
-    border:none;
+    border: none;
   }
 }
 //COLOR BY CHILD
 .CardUi_Container .CardUi:nth-child(1) .CardUi_Circle,
 .CardUi_Container .CardUi:nth-child(1) .CardUi_Content button {
-    background: #755EBF;
+  background: #755ebf;
 }
 .CardUi_Container .CardUi:nth-child(2) .CardUi_Circle,
 .CardUi_Container .CardUi:nth-child(2) .CardUi_Content button {
-    background: #0797FA;
+  background: #0797fa;
 }
 .CardUi_Container .CardUi:nth-child(3) .CardUi_Circle,
 .CardUi_Container .CardUi:nth-child(3) .CardUi_Content button {
-    background: #FFDC70;
+  background: #7a2b1d94;
 }
-

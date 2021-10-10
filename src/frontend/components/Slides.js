@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../assets/styles/components/Slides.scss';
 import propTypes from 'prop-types';
-import logo from '../assets/static/logo.svg';
 
 const Slides = ({ images, interval }) => {
 
@@ -42,7 +41,6 @@ const Slides = ({ images, interval }) => {
         }
         <div className='Slide_container_Domi'>
           <div className='Landing_Domi'>
-            <img src={logo} alt=' ' />
             <p>DomiTiendas</p>
           </div>
         </div>
