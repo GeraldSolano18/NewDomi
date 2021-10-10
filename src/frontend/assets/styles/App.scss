@@ -24,29 +24,21 @@ ul {
 }
 .two_ph {
   display: grid;
+  padding: 0 3rem;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 25px;
-  margin-bottom: 25px;
+  column-gap: 30px;
 }
 
-@mixin foto {
-  height: 520px;
-  display: block;
-  width: 520px;
-}
 .two_1 {
-  @include foto;
-  background: url("../static/Social.png") center no-repeat;
-  background-size: 520px, cover;
-  margin-left: auto;
-  border-radius: 15px;
+  border: solid 1px red;
+  border-radius: 5px;
+  height: 625px;
 }
 .two_2 {
-  @include foto;
-  background: url("../static/gente-negocios.png") center no-repeat;
-  background-size: 520px, cover;
+  background: url(../static/gente-negocios.png) center no-repeat;
   border-radius: 5px;
-  margin-right: auto;
+  border: solid 1px red;
+  height: 625px;
 }
 .two_title {
   font-size: 35px;
@@ -57,9 +49,10 @@ ul {
 }
 .two_content {
   padding: 35px;
-  line-height: 1.5em;
+  line-height: 1.7em;
   color: $COLOR_NEGRO;
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: bold;
   margin-top: 40px;
   text-align: justify;
   background: rgba(255, 255, 255, 0.3);
@@ -175,7 +168,7 @@ ul {
     font-style: italic;
     font-weight: bold;
     line-height: 1.8;
-    margin: 3rem 7rem ;
+    margin: 3rem 7rem;
   }
 }
 .wrapper {

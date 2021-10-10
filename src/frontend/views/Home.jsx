@@ -15,6 +15,7 @@ import online from "../assets/static/icon_online.svg";
 import bud from "../assets/static/icon_bud.svg";
 import onboarding from "../assets/static/icon_onboarding.svg";
 import api from "../assets/static/icon_api.svg";
+import test from "../assets/static/Social.png";
 import "../assets/styles/App.scss";
 
 const images = [
@@ -65,12 +66,13 @@ const Home = () => {
         <Fade right>
           <ImpactoCard
             title="Impacto economico"
-            content="Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
-          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías
-          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones"
+            content="En el contexto que nos encontramos hoy en día muchas empresas han tenido que digitalizar, la digitalización hoy en día ha sido vital para muchas empresas para controlar sus operaciones de una manera centralizada, como también ha sido herramientas para los emprendedores de darse a conocer en el mundo digital con el fin de aumentar sus ventas y abrirse al mundo. Hoy en día existen muchas empresas que suelen brindar servicios integrales pero tras las encuesta que hemos realizado muchas PYMES nos han  manifestado que los costos de dichas soluciones suelen ser muy altas, como también no les brinda la retroalimentación necesaria para tomar decisiones que les ayude a optimizar sus procesos o reducir sus costos con el fin de generarles mayores ingresos."
             claseCss="two_2"
           />
         </Fade>
+      </div>
+      <div>
+        <img src={test} alt="" />
       </div>
       <div className="why">
         <div className="wrapper">
