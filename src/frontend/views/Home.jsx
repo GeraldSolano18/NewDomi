@@ -49,9 +49,11 @@ const images = [
 ];
 const Home = () => {
   return (
+
     <div className="mt-3">
       <Slides interval={8000} images={images} />
       <img src={banner} className="banner" alt="Banner" />
+
       <CardUi />
       <div className="two_ph mt-4 mb-5">
         <Fade left>
