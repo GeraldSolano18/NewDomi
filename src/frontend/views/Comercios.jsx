@@ -3,7 +3,7 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 import { BannerComercio } from "../components/bannerComercio";
-import fondo from "../assets/static/fondo-blanco.png";
+
 import logo from "../assets/static/logo.svg";
 import pos from "../assets/static/pos.png";
 import check from "../assets/static/Check.svg";
@@ -15,7 +15,6 @@ const Comercios = () => {
       <BannerComercio />
 
       <div className="container">
-        <img src={fondo} alt="blancofondo" className="fondo-blanco" />
         <div className="contenido">
           <div className="seccion">
             <Fade>

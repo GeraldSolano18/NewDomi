@@ -42,13 +42,19 @@
 .NavLink {
   color: white;
   font-size: 18px;
+  font-weight: bold;
+  word-spacing: 5px;
   text-decoration: none;
-  padding: 5px;
-  border-bottom: solid 1px white;
+  padding: 0 8px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.NavLink:hover {
+  color: #24fc89;
 }
 .fondo-blanco {
   width: 100%;
 }
 .activeItem {
-  background-color: rgba(255, 255, 255, 0.2);
+  color: #24fc89;
 }

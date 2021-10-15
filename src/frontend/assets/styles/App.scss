@@ -6,11 +6,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+.sectionScroll {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+.home-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  background-color: white;
+}
+//TODO make a scroll X infinitive TO  images in dashboard
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  // overflow-y: scroll;
-  // scroll-behavior: initial;
 }
 p {
   margin: 0;

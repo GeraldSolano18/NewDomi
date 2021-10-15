@@ -33,7 +33,7 @@
 }
 
 .Slide {
-  height: 80vh;
+  height: calc(100vh - 397px);
   width: 100%;
 }
 
@@ -41,7 +41,7 @@
   opacity: 0.5;
 }
 .Slide_container {
-  height: 80vh;
+  height: calc(100vh - 397px);
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
