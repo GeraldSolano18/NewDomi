@@ -53,10 +53,19 @@ const Home = () => {
         <Slides interval={8000} images={images} />
         <img src={banner} className="banner" alt="Banner" />
       </div>
-      <div className="sectionScroll">
+      <div className="sectionScroll pt-2 ">
         <CardUi />
       </div>
       <div className="sectionScroll">
+        <div>
+          <div className="Landing_con">
+            <Bounce>
+              <div className="mt-">
+                <h1 className="title__h1 ">Conozca sobre nosotros</h1>
+              </div>
+            </Bounce>
+          </div>
+        </div>
         <div className="two_ph mt-4 mb-5">
           <Fade left>
             <ImpactoCard
