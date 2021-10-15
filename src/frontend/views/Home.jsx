@@ -1,6 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from "react";
-import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
 import ImpactoCard from "../components/ImpactoCard";
@@ -8,13 +7,8 @@ import BannerHero from "../components/BannerHero";
 import banner from "../assets/static/bannerComercio.png";
 import Footer from "../components/Footer";
 import { CardUi } from "../components/CardUi";
-// import { CardHover } from "../components/CardHover";
 import Slides from "../components/Slides";
 import Emprendedores from "../assets/static/Emprendedores.png";
-import online from "../assets/static/icon_online.svg";
-import bud from "../assets/static/icon_bud.svg";
-import onboarding from "../assets/static/icon_onboarding.svg";
-import api from "../assets/static/icon_api.svg";
 import "../assets/styles/App.scss";
 
 const images = [
@@ -85,58 +79,7 @@ const Home = () => {
           </Fade>
         </div>
       </div>
-      <div className="sectionSCroll">
-        <div className="why">
-          <div className="wrapper">
-            <Bounce>
-              <h1 className="title__h1">¿Por qué elegirnos a nosotros?</h1>
-            </Bounce>
 
-            <div className="why__grid">
-              <Zoom>
-                <div className="why_item">
-                  <img src={api} alt="" />
-                  <h1 className="title__h2">Online Shop</h1>
-                  <p className="copy">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quas laboriosam culpa ipsam sapiente
-                  </p>
-                </div>
-              </Zoom>
-              <Zoom>
-                <div className="why_item">
-                  <img src={online} alt="" />
-                  <h1 className="title__h2">Online Shop</h1>
-                  <p className="copy">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quas laboriosam culpa ipsam sapiente
-                  </p>
-                </div>
-              </Zoom>
-              <Zoom>
-                <div className="why_item">
-                  <img src={bud} alt="" />
-                  <h1 className="title__h2">Online Shop</h1>
-                  <p className="copy">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quas laboriosam culpa ipsam sapiente, facere officia
-                  </p>
-                </div>
-              </Zoom>
-              <Zoom>
-                <div className="why_item">
-                  <img src={onboarding} alt="" />
-                  <h1 className="title__h2">Online Shop</h1>
-                  <p className="copy">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quas laboriosam culpa ipsam sapiente, facere officia
-                  </p>
-                </div>
-              </Zoom>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="sectionScroll">
         <Fade>
           <BannerHero />
