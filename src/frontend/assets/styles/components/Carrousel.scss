@@ -1,0 +1,59 @@
+.Carrousel {
+  width: 700px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  overflow: hidden;
+  position: relative;
+}
+.Carrousel_Img {
+  width: 700px;
+  height: 400px;
+
+}
+.Carrousel_Buttons {
+  z-index: 10;
+  position: absolute;
+  top: calc(50% - 35px);
+}
+.rigth{
+  left:0px ;
+}
+.left{
+  right: 0px;
+}
+
+
+.Carrousel_Icon {
+  height: 50px;
+  width: 50px;
+  margin: 0;
+}
+
+//Para cuando el componente se monta
+.slide-enter {
+  position: absolute;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.slide-enter-active {
+  position: absolute;
+  transform: translateX(0%);
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+//Para cuando el componente se desmonta
+.slide-exit {
+  position: absolute;
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.slide-exit-active {
+  position: absolute;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 1s ease;
+}

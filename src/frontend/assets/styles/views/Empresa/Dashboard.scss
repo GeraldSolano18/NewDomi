@@ -1,0 +1,26 @@
+@import "../../Variables.scss";
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
+@import '~antd/dist/antd.css';
+body{
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.pruebaGrid{
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: "sidebar contenedormenu"
+                         "sidebar contenedorhm "  ;
+}
+
+.sidebar{
+grid-area: sidebar ;
+}
+.contenedormenu{
+grid-area: contenedormenu;
+}
+.contenedorhm{
+grid-area: contenedorhm;
+border: solid 1px red;
+}

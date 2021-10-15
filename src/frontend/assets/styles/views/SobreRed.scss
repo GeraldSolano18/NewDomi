@@ -1,0 +1,49 @@
+@import "../Variables.scss";
+@import "../Mixins.scss";
+
+.container {
+//   position: relative;
+margin-top: 150px;
+}
+// .contenido {
+//   position: absolute;
+//   top: 0px;
+//   width: 100%;
+// }
+
+.titulo {
+  margin-top: 15px;
+  font-size: 25px;
+}
+.contenido__ {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.img {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  bottom: 20px;
+}
+.img1 {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  bottom: 50px;
+}
+.parrafo {
+  font-size: 20px;
+  text-align: justify;
+  padding: 0 20px;
+  position: relative;
+  top: 40px;
+}
+.seccion {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}

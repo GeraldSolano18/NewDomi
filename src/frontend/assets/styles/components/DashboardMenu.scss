@@ -1,0 +1,39 @@
+@import "../Variables.scss";
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
+.container_master{
+    width: 100%;
+    height: 100px;
+    background-color: #F0F1F2;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+}
+.Dash_Buttons{
+    height: 50px;
+    line-height: 20px;
+    width: 220px;
+    border-radius: 5px;
+    border: none;
+    background-color:white ;
+    box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.17);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.nojoda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration:none;
+}
+.config{
+    height: 40px;
+    width:40px ;
+}
+
+.buttontext{
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: $COLOR_PRINCIPAL;
+
+}

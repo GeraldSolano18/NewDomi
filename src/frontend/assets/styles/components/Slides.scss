@@ -1,0 +1,68 @@
+@import "../Variables.scss";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@keyframes show {
+  0% {
+    z-index: 1;
+    opacity: 0;
+  }
+  100% {
+    z-index: 1;
+    opacity: 1;
+  }
+}
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+.imagen-test {
+  height: 100vh;
+  object-fit: cover bottom;
+}
+.animaShow {
+  animation: 5000ms show ease-out;
+  animation-fill-mode: forwards;
+}
+.animaHide {
+  animation: 5000ms hide ease-out;
+  animation-fill-mode: forwards;
+}
+
+.Slide {
+  height: calc(100vh - 397px);
+  width: 100%;
+}
+
+.imagen-test {
+  opacity: 0.5;
+}
+.Slide_container {
+  height: calc(100vh - 397px);
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+}
+
+.Slide_container_img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.Slide_container_Domi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.Slider_prueba {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
