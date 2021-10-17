@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React from "react";
 import Particles from "react-particles-js";
+import { SideBarBlue } from "./ReadSideBar/index";
 
 const particleOPT = {
   particles: {
@@ -40,22 +41,32 @@ const particleOPT = {
 const BannerHero = () => {
   return (
     <>
-      <div className='hero_banner_props_left'>
-        <div className='hero_banner_content'>
-          <div className='particles_banner'>
-            <Particles height='500px' width='651px' params={particleOPT} />
+      <div className="hero_banner_props_left">
+        <div className="hero_banner_content">
+          <div className="particles_banner">
+            <Particles height="500px" width="651px" params={particleOPT} />
           </div>
-          <div className='hero_banner_center'>
-            <h1 className='hero_banner_h1'> Lorem ipsum es el texto que emostraciones de tipografía</h1>
-            <p className='hero_banner_p'>
-              Lorem ipsum es el texto que sLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografíae usa habitualmente en diseño gráfico en demostraciones de tipografía
+          <div className="hero_banner_center">
+            <h1 className="hero_banner_h1">
+              {" "}
+              Lorem ipsum es el texto que emostraciones de tipografía
+            </h1>
+            <p className="hero_banner_p">
+              Lorem ipsum es el texto que sLorem ipsum es el texto que se usa
+              habitualmente en diseño gráfico en demostraciones de tipografíae
+              usa habitualmente en diseño gráfico en demostraciones de
+              tipografía
             </p>
-            <p className='hero_banner_p'>
-              Lorem ipsum es el texto que sLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografíae usa habitualmente en diseño gráfico en demostraciones de tipografía
+            <p className="hero_banner_p">
+              Lorem ipsum es el texto que sLorem ipsum es el texto que se usa
+              habitualmente en diseño gráfico en demostraciones de tipografíae
+              usa habitualmente en diseño gráfico en demostraciones de
+              tipografía
             </p>
           </div>
         </div>
-        <div className='hero_banner_img' />
+        {/* <div className='hero_banner_img' /> */}
+        <SideBarBlue />
       </div>
     </>
   );
