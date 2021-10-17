@@ -84,9 +84,7 @@ const Home = () => {
         <Fade>
           <BannerHero />
         </Fade>
-        {/* <CardHover /> */}
         <img src={Emprendedores} className="banner" alt="Banner" />
-
         <Fade>
           <Footer />
         </Fade>
