@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/no-unused-state */
 /* eslint-disable react/destructuring-assignment */
@@ -9,12 +10,15 @@ import contacto from "../assets/static/contacto.jpg";
 import datos from "../assets/static/Datos.svg";
 import negocio from "../assets/static/Negocio.svg";
 import "../assets/styles/views/Contactanos.scss";
+// eslint-disable-next-line import/extensions
+import StepForm from "../components/StepsForm/index";
 
 class ImputControlado extends Component {
   // eslint-disable-next-line react/state-in-constructor
   state = {
     text: "",
     color: "#E8E8E8",
+    step: 1,
   };
 
   Actualizar = (event) => {
@@ -60,7 +64,15 @@ class ImputControlado extends Component {
     );
   }
 }
-
+const arrayOfTitles = [
+  "Purchase",
+  "Mortgage",
+  "Income",
+  "Expenses",
+  "Sale",
+  "Finished",
+  "Test",
+];
 class Contactanos extends Component {
   // eslint-disable-next-line react/state-in-constructor
   state = {
@@ -70,6 +82,7 @@ class Contactanos extends Component {
     telefono: "",
     empresa: "",
     TipoNegocio: "Emprendedor",
+    step: 1,
   };
 
   actualizar = (name, text) => {
@@ -138,6 +151,7 @@ class Contactanos extends Component {
           <div className="contacto">
             <p className="contactoTitle">Formulario de contacto</p>
           </div>
+          <StepForm arrayOfTitles={arrayOfTitles} step={this.state.step} />
           <div className="contacto">
             <p className="contactoP">
               Ingresa los datos correspodientes a tu negocio y alguien de
