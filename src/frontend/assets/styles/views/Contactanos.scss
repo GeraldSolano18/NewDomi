@@ -7,8 +7,8 @@
   position: absolute;
 }
 .containerwhite {
-  width: 1200px;
-  height: 600px;
+  width: 80vw;
+  // height: 600px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.2);
   margin: auto;
@@ -30,7 +30,6 @@
 }
 .contactoTitle {
   font-size: 4rem;
-
   font-family: $FUENTE_DOMI;
   color: $COLOR_NEGRO;
   text-shadow: 1px 1px $COLOR_PRINCIPAL;
@@ -46,29 +45,53 @@
   text-align: center;
 }
 .ContainerBoss {
-  display: grid;
-  grid-template-columns: repeat(2, 600px);
+  // display: grid;
+  // grid-template-columns: repeat(2, 600px);
 }
-.sub {
-  width: 300px;
-  height: 40px;
-  border: none;
-  cursor: pointer;
-  border-radius: 8px;
-  background-color: $COLOR_NEGRO;
-  color: white;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  //font-family: $Tipo2;
-  font-size: 18px;
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 3rem;
+  .sub-primary {
+    width: 300px;
+    height: 40px;
+    outline: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: $COLOR_NEGRO;
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub-default {
+    width: 300px;
+    height: 40px;
+    font-weight: bold;
+    outline: none;
+    border: solid 2px $COLOR_NEGRO;
+    cursor: pointer;
+    border-radius: 8px;
+    background: none;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .Datos {
   font-size: 30px;
   color: $COLOR_NEGRO;
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
   margin-bottom: 20px;
   margin-top: 20px;

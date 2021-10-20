@@ -57,15 +57,8 @@ const StepForm: FC<StepFormProps> = (props) => {
             "border-gray": step < index + 1,
           })}
         >
-          <span className="font-mono text-2xl">{index + 1}</span>
-          <div
-            className={cn("top-value", {
-              "text-black": index + 1 <= step,
-              "text-secondary-text": index + 1 > step,
-            })}
-          >
-            {item}
-          </div>
+          <span>{index + 1}</span>
+          <div className="top-value">{item}</div>
         </button>
       ));
     }
@@ -98,21 +91,14 @@ const StepForm: FC<StepFormProps> = (props) => {
           })}
         >
           <span className="font-mono text-2xl">{indexFound + 1}</span>
-          <div
-            className={cn("top-value", {
-              "text-black": indexFound + 1 <= step,
-              "text-secondary-text": indexFound + 1 > step,
-            })}
-          >
-            {item}
-          </div>
+          <div className="top-value">{item}</div>
         </button>
       );
     });
   };
   return (
     <>
-      <div className="progressBar m-5" ref={wrapper}>
+      <div className="progressBar" ref={wrapper}>
         <div className="progress" style={{ width: progress }} />
         {renderValues()}
       </div>
