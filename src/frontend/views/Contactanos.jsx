@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/no-unused-state */
 /* eslint-disable react/destructuring-assignment */
@@ -7,14 +8,17 @@ import Particles from "react-particles-js";
 
 import contacto from "../assets/static/contacto.jpg";
 import datos from "../assets/static/Datos.svg";
-import negocio from "../assets/static/Negocio.svg";
+//import negocio from "../assets/static/Negocio.svg";
 import "../assets/styles/views/Contactanos.scss";
+// eslint-disable-next-line import/extensions
+import StepForm from "../components/StepsForm/index";
 
 class ImputControlado extends Component {
   // eslint-disable-next-line react/state-in-constructor
   state = {
     text: "",
     color: "#E8E8E8",
+    step: 1,
   };
 
   Actualizar = (event) => {
@@ -37,15 +41,11 @@ class ImputControlado extends Component {
   render() {
     const estilos = {
       border: `2px solid ${this.state.color}`,
-      width: "300px",
-      height: "30px",
-      borderRadius: "3px",
-      display: "block",
-      marginLeft: "auto",
-      marginRight: "auto",
+      width: "400px",
+      height: "35px",
+      borderRadius: "4px",
       marginTop: "20px",
-      textAlign: "center",
-      fontSize: "15px",
+      fontSize: "20px",
       outline: "none",
       padding: "1.2rem 0",
     };
@@ -60,7 +60,11 @@ class ImputControlado extends Component {
     );
   }
 }
-
+const arrayOfTitles = [
+  "Informacion General",
+  "Informacion Personal",
+  "Datos del negocio",
+];
 class Contactanos extends Component {
   // eslint-disable-next-line react/state-in-constructor
   state = {
@@ -70,6 +74,7 @@ class Contactanos extends Component {
     telefono: "",
     empresa: "",
     TipoNegocio: "Emprendedor",
+    step: 1,
   };
 
   actualizar = (name, text) => {
@@ -87,10 +92,22 @@ class Contactanos extends Component {
     });
   };
 
+  nextValue = () => {
+    this.setState({
+      step: 2,
+    });
+  };
+
+  prevValue = () => {
+    this.setState({
+      step: 1,
+    });
+  };
+
   render() {
-    const handleSubmit = (event) => {
-      event.preventDefault();
-    };
+    // const handleSubmit = (event) => {
+    //   event.preventDefault();
+    // };
     const particleOPT = {
       particles: {
         number: {
@@ -131,20 +148,22 @@ class Contactanos extends Component {
         <div>
           <Particles className="particles" params={particleOPT} />
         </div>
-
         <img src={contacto} alt="" className="fotoxx" />
 
         <div className="containerwhite">
           <div className="contacto">
             <p className="contactoTitle">Formulario de contacto</p>
           </div>
+          <div>
+            <StepForm arrayOfTitles={arrayOfTitles} step={this.state.step} />
+          </div>
           <div className="contacto">
-            <p className="contactoP">
+            {/* <p className="contactoP">
               Ingresa los datos correspodientes a tu negocio y alguien de
               nuestro equipo se pondra en contacto contigo
-            </p>
+            </p> */}
           </div>
-          <form onSubmit={handleSubmit}>
+          <form>
             <div className="ContainerBoss">
               <div>
                 <div className="Datos">
@@ -172,7 +191,7 @@ class Contactanos extends Component {
                   name="telefono"
                 />
               </div>
-              <div>
+              {/* <div>
                 <div className="Datos">
                   <img src={negocio} alt="" />
                   Datos del negocio
@@ -194,11 +213,24 @@ class Contactanos extends Component {
                   ¿Qué productos ofrecerás en tu empresa?
                   <input type="checkbox" />
                 </div>
-              </div>
+              </div> */}
             </div>
-            <button type="submit" className="sub">
-              Enviar datos
-            </button>
+            <div className="button-group">
+              <button
+                onClick={this.prevValue}
+                type="button"
+                className="sub-default"
+              >
+                <p>Atras</p>
+              </button>
+              <button
+                onClick={this.nextValue}
+                type="button"
+                className="sub-primary"
+              >
+                <p>Continuar</p>
+              </button>
+            </div>
           </form>
         </div>
       </div>
