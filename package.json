@@ -33,7 +33,7 @@
     "babel-plugin-transform-semantic-ui-react-imports": "^1.4.1",
     "dotenv": "^10.0.0",
     "eslint-loader": "^4.0.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "gh-pages": "^3.2.3",
     "loader-utils": "^2.0.0",
     "nodemon": "^2.0.12",
